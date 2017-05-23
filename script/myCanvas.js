@@ -473,6 +473,11 @@ function ruleGo2()
                         var index1=FindX(numVn,state[tNum-1]);
                     var index2=FindX(numVn,"+");
                     toGo=val[cot1].charAt(val[cot1].indexOf("/")-2);
+                      if(toGo==undefined)
+                    {
+                        alert("输入的语句错误!");
+                        return;
+                    }
                     if(parseInt(index1)<parseInt(index2))//移进
                     {   if(state[tNum-1]=="1"&&toGo=="#")
                         {   toGoflag=555;
@@ -535,6 +540,11 @@ function ruleGo2()
                    else if(flag==10||flag==11)
                    {
                     toGo=val[cot1].charAt(val[cot1].indexOf("/")-2);
+                     if(toGo==undefined)
+                    {
+                        alert("输入的语句错误!");
+                        return;
+                    }
                     if(state[tNum-1]=="1"&&toGo=="#")
                     {
                         toGoflag=555;//接受
