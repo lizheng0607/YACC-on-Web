@@ -1142,7 +1142,10 @@ function draw(A,D){
             setTimeout(function(){drawColDownLine(110,100,130);},350);
             setTimeout(function(){drawLeftLine(110,230,30);},1000);   }
        
+        if(D=="2")
+        { drawLeftLine(160,45,80);
         
+        }
         if(D=="4")
         {   
              drawRowLine(230,65,25);
